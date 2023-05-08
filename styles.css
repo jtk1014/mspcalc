@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #121212;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 250px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: none;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #0098c9;
+}
+
+label {
+    text-align: left;
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #0098c9;
+    border-radius: 3px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+button, #download-template-btn {
+    background-color: #0098c9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover, #download-template-btn:hover {
+    background-color: #0073a1;
+}
+
+.totals {
+    margin-top: 20px;
+    font-size: 1.1em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.totals-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.totals-item span {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.monthly-cost,
+.annual-cost {
+    grid-column: 3;
+}
+
+.monthly-msrp,
+.annual-msrp {
+    grid-column: 4;
+}
+
+.category-container {
+    margin-bottom: 30px;
+    
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #282828;
+}
+
+#output-section {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: #222;
+    color: #0098c9;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1200px;
+}
+
+.on-site-charge-row {
+    grid-column: 4 / 5;
+    grid-row: -1;
+}
+
+.download-proposal-template {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    }
+    
+    .on-site-charge-label {
+    display: flex;
+    align-items: center;
+    }
+    
+    .on-site-charge-checkbox {
+    margin-left: 10px;
+    display: flex;
+    }
+    
+    @media (max-width: 992px) {
+    .row {
+    grid-template-columns: 2fr 1fr 1fr;
+    }
+    }
+
+    .totals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .monthly-cost,
+    .annual-cost {
+        grid-column: 2;
+    }
+    
+    .monthly-msrp,
+    .annual-msrp {
+        grid-column: 3;
+    }
+    
+    .on-site-charge-row {
+        grid-column: 2 / 3;
+        grid-row: -1;
+    }
+    
+    .info-icon {
+        position: relative;
+        display: inline-block;
+        font-size: 1.5em;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+      }
+      .info-icon .fas {
+        color: #0098c9;
+      }
+
+      .info-icon i {
+        font-family: "Font Awesome 5 Free";
+      }
+      
+      .tooltip-text {
+        position: absolute;
+        visibility: hidden;
+        bottom: 100%;
+        left: 100%;
+        background-color: #324a5a;
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        width: 400px;
+      }
+      
+      .info-icon:hover .tooltip-text {
+        visibility: visible;
+      }
+      
+
+      .buttons-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .info-icon img {
+        width: 30px;
+        height: 30px;
+      }
